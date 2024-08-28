@@ -7,6 +7,7 @@ import Cart from "./Pages/Cart/Cart";
 import Footer from "./Components/Footer/Footer";
 import LoginPop from "./Components/LoginPop/LoginPop";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
+import Header from "./Components/Header/Header";
 
 const App = () => {
   const [showPop, setShowPop] = useState(false);
@@ -15,6 +16,7 @@ const App = () => {
       {showPop ? <LoginPop setShowPop={setShowPop} /> : <></>}
       <div className="app">
         <Navbar setShowPop={setShowPop} />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />}></Route>
