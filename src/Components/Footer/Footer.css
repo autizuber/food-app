@@ -1,0 +1,82 @@
+.footer{
+  background-color: #323232;
+  color: #d9d9d9;
+  padding: 20px 9vw;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.footer-content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr ;
+  gap: 80px;
+}
+
+.footer-left,.footer-center,.footer-right{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-left li,.footer-center li,.footer-right li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.footer-center h2,.footer-right h2{
+  color: white;
+}
+
+.footer-left .footer-socel-icon{
+  width: 30px;
+  display: flex;
+  gap: 20px;
+}
+.footer-left .footer-socel-icon img{
+  width: 35px;
+  cursor: pointer;
+}
+
+.footer-left .footer-socel-icon img:hover{
+    background-color: rgba(93, 93, 93, 0.608);
+    border-radius: 50%;
+}
+
+.footer-left p{
+  font-size: 15px;
+  color: #dcdcdcdd;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.copy{
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+}
+
+hr{
+  width: 100%;
+  background-color: rgba(201, 201, 201, 0.783);
+  height: 1.5px;
+  margin: 30px 0px;
+  box-shadow: 1px 1px 10px rgb(139, 139, 139);
+}
+@media (max-width:750) {
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.copy{
+  text-align: center;
+}
+}
